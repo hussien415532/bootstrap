@@ -1,0 +1,158 @@
+:root {
+  --dark-blue: #19283f;
+  --green-color: #33d1cc;
+  --yellow: #ffc400;
+  --bg-section: #eff7ff;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+/* start navbar  */
+.navbar .navbar-brand .logo {
+  width: 65px;
+}
+.navbar {
+  background-color: #19283f;
+  padding: 20px;
+}
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .active {
+  color: #33d1cc;
+}
+.navbar button {
+  color: white;
+  font-size: 25px;
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+  cursor: pointer;
+}
+.navbar .search svg {
+  color: #33d1cc;
+  font-size: 25px;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* end navbar */
+/* start landing */
+.landing {
+  background-color: #19283f;
+  min-height: calc(100vh - 75px);
+}
+/* end landing */
+/* start feature*/
+.heading svg {
+  font-size: 100px;
+  color: #ffc400;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 120px;
+  height: 2px;
+  background-color: #33d1cc;
+  transform: translateX(-50%);
+}
+.features .icon-cont {
+  height: 200px;
+}
+.features .icon-cont svg:first-child {
+  font-size: 180px;
+  color: #eff7ff;
+}
+.features .icon-cont svg:last-child {
+  font-size: 60px;
+  color: var(--green-color);
+}
+.features .text-uppercase {
+  color: #ffc400;
+}
+/* end feature*/
+/* start-works */
+.works ul li {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(110, 110, 110);
+}
+.works ul li.active {
+  background-color: #ffc400;
+  color: #eff7ff;
+}
+.works img {
+  transition: 0.3s;
+}
+.works {
+  background-color: #eff7ff;
+}
+.works img:hover {
+  transform: scale(1.12);
+}
+/* end-works */
+/* start stuff */
+.stuff img {
+  width: 500px;
+}
+/* end stuff */
+.team {
+  background-color: var(--bg-section);
+}
+.team .row h3 {
+  background-color: var(--green-color);
+}
+.project img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  width: 150px;
+}
+.project .start {
+  background-color: var(--dark-blue);
+}
+.blog img {
+  transition: 0.3s;
+}
+.blog img:hover {
+  filter: grayscale(40%);
+}
+.subscribe {
+  background-color: var(--yellow);
+}
+.subscribe button {
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+}
+.subscribe input[type="email"]::placeholder {
+  color: white;
+  visibility: hidden;
+}
+.subscribe input[type="email"]:focus::placeholder {
+  visibility: visible;
+}
+.subscribe input[type="email"] {
+  border: none;
+  border-bottom: white 1px solid;
+  box-shadow: none;
+  border-radius: 0%;
+}
+.footer
+{
+  background-color: var(--dark-blue);
+}
+.footer .maker
+{
+  color: var(--green-color);
+}
+.footer .copy
+{
+  color: var(--yellow);
+}
